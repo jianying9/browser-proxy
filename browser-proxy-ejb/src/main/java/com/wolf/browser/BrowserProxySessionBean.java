@@ -9,6 +9,7 @@ import javax.ejb.TransactionAttributeType;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 /**
  *
@@ -21,7 +22,9 @@ public class BrowserProxySessionBean implements BrowserProxySessionBeanRemote {
 
     @Override
     public Map<String, String> getNewCookie(String url, Map<String, String> cookieMap) {
-        WebDriver driver = new FirefoxDriver();
+        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+        capabilities.setCapability("firefox_binary", "/usr/bin/chromium-browser");
+        WebDriver driver = new FirefoxDriver(capabilities);
         //访问地址
         driver.get(url);
         //设置cookie
