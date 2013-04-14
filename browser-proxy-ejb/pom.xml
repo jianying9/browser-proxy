@@ -20,10 +20,6 @@
             <artifactId>selenium-java</artifactId>
             <exclusions>
                 <exclusion>
-                    <artifactId>selenium-htmlunit-driver</artifactId>
-                    <groupId>org.seleniumhq.selenium</groupId>
-                </exclusion>
-                <exclusion>
                     <artifactId>selenium-safari-driver</artifactId>
                     <groupId>org.seleniumhq.selenium</groupId>
                 </exclusion>
@@ -46,6 +42,10 @@
                 <exclusion>
                     <artifactId>selenium-chrome-driver</artifactId>
                     <groupId>org.seleniumhq.selenium</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>jetty-websocket</artifactId>
+                    <groupId>org.eclipse.jetty</groupId>
                 </exclusion>
             </exclusions>
         </dependency>
