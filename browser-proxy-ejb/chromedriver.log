@@ -1,0 +1,227 @@
+[0.000][INFO]:      ChromeDriver 26.0.1383.0 /home/aladdin/chromedriver
+[0.703][FINE]:      Initializing session with capabilities {
+   "browserName": "chrome",
+   "chrome.binary": "/usr/bin/chromium-browser",
+   "platform": "ANY",
+   "version": ""
+}
+
+[0.703][INFO]:      Launching chrome: /usr/bin/chromium-browser --disable-hang-monitor --disable-prompt-on-repost --dom-automation --full-memory-crash-report --no-default-browser-check --no-first-run --disable-background-networking --disable-sync --disable-translate --disable-web-resources --safebrowsing-disable-auto-update --safebrowsing-disable-download-protection --disable-client-side-phishing-detection --disable-component-update --disable-default-apps --enable-logging --log-level=1 --password-store=basic --ignore-certificate-errors about:blank
+[1.428][INFO]:      Connected to Chrome successfully. Version: 18.0.1025.151
+[1.480][FINE]:      Command received (/session/f095c135c4c9581aed82b5d4d11d688a)
+[1.480][FINE]:      Command finished (/session/f095c135c4c9581aed82b5d4d11d688a) with response {
+   "sessionId": "f095c135c4c9581aed82b5d4d11d688a",
+   "status": 0,
+   "value": {
+      "acceptSslCerts": false,
+      "applicationCacheEnabled": false,
+      "browserConnectionEnabled": false,
+      "browserName": "chrome",
+      "chrome.chromedriverVersion": "26.0.1383.0",
+      "cssSelectorsEnabled": true,
+      "databaseEnabled": false,
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "locationContextEnabled": false,
+      "nativeEvents": true,
+      "platform": "linux",
+      "rotatable": false,
+      "takesScreenshot": true,
+      "version": "18.0.1025.151",
+      "webStorageEnabled": true
+   }
+}
+
+[1.511][FINE]:      Command received (/session/f095c135c4c9581aed82b5d4d11d688a/url) with params {
+   "url": "http://weibo.com"
+}
+
+[1.511][FINER]:     Waiting for all views to stop loading...
+[1.511][FINER]:     Done waiting for all views to stop loading
+[6.058][FINER]:     Waiting for all views to stop loading...
+[6.068][FINER]:     Done waiting for all views to stop loading
+[6.068][FINE]:      Command finished (/session/f095c135c4c9581aed82b5d4d11d688a/url) with response {
+   "sessionId": "f095c135c4c9581aed82b5d4d11d688a",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[6.076][FINE]:      Command received (/session/f095c135c4c9581aed82b5d4d11d688a/cookie) with params {
+   "cookie": {
+      "class": "org.openqa.selenium.Cookie",
+      "hCode": 82467,
+      "name": "SUE",
+      "path": "/",
+      "secure": false,
+      "value": "es%3D5300d4dd331e9807fe1f81ee560d6b6d%26ev%3Dv1%26es2%3D1c763dda1652040d50640952f6928271%26rs0%3D..."
+   }
+}
+
+[6.076][FINER]:     Waiting for all views to stop loading...
+[6.081][FINER]:     Done waiting for all views to stop loading
+[6.100][FINER]:     Waiting for all views to stop loading...
+[6.101][FINER]:     Done waiting for all views to stop loading
+[6.101][FINE]:      Command finished (/session/f095c135c4c9581aed82b5d4d11d688a/cookie) with response {
+   "sessionId": "f095c135c4c9581aed82b5d4d11d688a",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[6.105][FINE]:      Command received (/session/f095c135c4c9581aed82b5d4d11d688a/cookie) with params {
+   "cookie": {
+      "class": "org.openqa.selenium.Cookie",
+      "hCode": 82481,
+      "name": "SUS",
+      "path": "/",
+      "secure": false,
+      "value": "SID-3316242410-1365927895-JA-uh54l-6654af482f64bfe7d9d0a0bd5e2e8cc3"
+   }
+}
+
+[6.105][FINER]:     Waiting for all views to stop loading...
+[6.106][FINER]:     Done waiting for all views to stop loading
+[6.108][FINER]:     Waiting for all views to stop loading...
+[6.109][FINER]:     Done waiting for all views to stop loading
+[6.109][FINE]:      Command finished (/session/f095c135c4c9581aed82b5d4d11d688a/cookie) with response {
+   "sessionId": "f095c135c4c9581aed82b5d4d11d688a",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[6.113][FINE]:      Command received (/session/f095c135c4c9581aed82b5d4d11d688a/cookie) with params {
+   "cookie": {
+      "class": "org.openqa.selenium.Cookie",
+      "hCode": 82478,
+      "name": "SUP",
+      "path": "/",
+      "secure": false,
+      "value": "cv%3D1%26bt%3D1365927895%26et%3D1366014295%26d%3Dc909%26i%3Db0c2%26us%3D1%26vf%3D0%26vt%3D0%26ac%..."
+   }
+}
+
+[6.113][FINER]:     Waiting for all views to stop loading...
+[6.114][FINER]:     Done waiting for all views to stop loading
+[6.116][FINER]:     Waiting for all views to stop loading...
+[6.116][FINER]:     Done waiting for all views to stop loading
+[6.116][FINE]:      Command finished (/session/f095c135c4c9581aed82b5d4d11d688a/cookie) with response {
+   "sessionId": "f095c135c4c9581aed82b5d4d11d688a",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[6.125][FINE]:      Command received (/session/f095c135c4c9581aed82b5d4d11d688a/url) with params {
+   "url": "http://weibo.com"
+}
+
+[6.125][FINER]:     Waiting for all views to stop loading...
+[6.126][FINER]:     Done waiting for all views to stop loading
+[22.166][FINER]:    Waiting for all views to stop loading...
+[22.171][FINER]:    Done waiting for all views to stop loading
+[22.171][FINE]:     Command finished (/session/f095c135c4c9581aed82b5d4d11d688a/url) with response {
+   "sessionId": "f095c135c4c9581aed82b5d4d11d688a",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[22.174][FINE]:     Command received (/session/f095c135c4c9581aed82b5d4d11d688a/cookie)
+[22.174][FINER]:    Waiting for all views to stop loading...
+[22.175][FINER]:    Done waiting for all views to stop loading
+[22.178][FINER]:    Waiting for all views to stop loading...
+[22.179][FINER]:    Done waiting for all views to stop loading
+[22.179][FINE]:     Command finished (/session/f095c135c4c9581aed82b5d4d11d688a/cookie) with response {
+   "sessionId": "f095c135c4c9581aed82b5d4d11d688a",
+   "status": 0,
+   "value": [ {
+      "domain": "weibo.com",
+      "http_only": true,
+      "name": "NSC_wjq_xfjcp.dpn_w3.6_w4",
+      "path": "/",
+      "secure": false,
+      "value": "ffffffff0941134545525d5f4f58455e445a4a423660"
+   }, {
+      "domain": ".weibo.com",
+      "http_only": false,
+      "name": "_s_tentry",
+      "path": "/",
+      "secure": false,
+      "value": "-"
+   }, {
+      "domain": ".weibo.com",
+      "http_only": false,
+      "name": "Apache",
+      "path": "/",
+      "secure": false,
+      "value": "9829487879760.562.1365929237902"
+   }, {
+      "domain": ".weibo.com",
+      "expiry": 1681289237.0,
+      "http_only": false,
+      "name": "SINAGLOBAL",
+      "path": "/",
+      "secure": false,
+      "value": "9829487879760.562.1365929237902"
+   }, {
+      "domain": ".weibo.com",
+      "expiry": 1397033237.0,
+      "http_only": false,
+      "name": "ULV",
+      "path": "/",
+      "secure": false,
+      "value": "1365929237915:1:1:1:9829487879760.562.1365929237902:"
+   }, {
+      "domain": "weibo.com",
+      "http_only": false,
+      "name": "SUE",
+      "path": "/",
+      "secure": false,
+      "value": "es%3D5300d4dd331e9807fe1f81ee560d6b6d%26ev%3Dv1%26es2%3D1c763dda1652040d50640952f6928271%26rs0%3D..."
+   }, {
+      "domain": "weibo.com",
+      "http_only": false,
+      "name": "SUS",
+      "path": "/",
+      "secure": false,
+      "value": "SID-3316242410-1365927895-JA-uh54l-6654af482f64bfe7d9d0a0bd5e2e8cc3"
+   }, {
+      "domain": "weibo.com",
+      "http_only": false,
+      "name": "SUP",
+      "path": "/",
+      "secure": false,
+      "value": "cv%3D1%26bt%3D1365927895%26et%3D1366014295%26d%3Dc909%26i%3Db0c2%26us%3D1%26vf%3D0%26vt%3D0%26ac%..."
+   }, {
+      "domain": "weibo.com",
+      "http_only": true,
+      "name": "NSC_JO5ux3qsdo02pureo32zvveomvcu4bn",
+      "path": "/",
+      "secure": false,
+      "value": "ffffffff0941134045525d5f4f58455e445a4a423660"
+   }, {
+      "domain": ".weibo.com",
+      "expiry": 1366534042.0,
+      "http_only": false,
+      "name": "wvr",
+      "path": "/",
+      "secure": false,
+      "value": "5"
+   }, {
+      "domain": "weibo.com",
+      "expiry": 1366015648.0,
+      "http_only": false,
+      "name": "SinaRot/u/3316242410%3Fwvr%3D5%26",
+      "path": "/",
+      "secure": false,
+      "value": "34"
+   } ]
+}
+

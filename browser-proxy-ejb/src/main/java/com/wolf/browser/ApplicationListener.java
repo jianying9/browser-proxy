@@ -40,8 +40,9 @@ public class ApplicationListener implements ServletContextListener {
             }
         }
         //
-        String webdriverIeDriver = configProperties.getProperty("webdriverIeDriver");
-        System.setProperty("webdriver.ie.driver", webdriverIeDriver);
+        String chromeDriver = configProperties.getProperty("chromeDriver");
+        String chromeBinary = configProperties.getProperty("chromeBinary");
+        ApplicationContext.CONTEXT.initChrome(chromeDriver, chromeBinary);
     }
 
     @Override

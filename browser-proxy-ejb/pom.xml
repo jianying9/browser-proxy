@@ -36,12 +36,20 @@
                     <groupId>org.seleniumhq.selenium</groupId>
                 </exclusion>
                 <exclusion>
-                    <artifactId>selenium-chrome-driver</artifactId>
+                    <artifactId>jetty-websocket</artifactId>
+                    <groupId>org.eclipse.jetty</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>selenium-firefox-driver</artifactId>
                     <groupId>org.seleniumhq.selenium</groupId>
                 </exclusion>
                 <exclusion>
-                    <artifactId>jetty-websocket</artifactId>
-                    <groupId>org.eclipse.jetty</groupId>
+                    <artifactId>selenium-ie-driver</artifactId>
+                    <groupId>org.seleniumhq.selenium</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>selenium-htmlunit-driver</artifactId>
+                    <groupId>org.seleniumhq.selenium</groupId>
                 </exclusion>
             </exclusions>
         </dependency>

@@ -8,8 +8,7 @@ import javax.ejb.TransactionAttribute;
 import javax.ejb.TransactionAttributeType;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 /**
  *
@@ -22,9 +21,8 @@ public class BrowserProxySessionBean implements BrowserProxySessionBeanRemote {
 
     @Override
     public Map<String, String> getNewCookie(String url, Map<String, String> cookieMap) {
-        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-        capabilities.setCapability("firefox_binary", "/usr/bin/chromium-browser");
-        WebDriver driver = new FirefoxDriver(capabilities);
+        
+        WebDriver driver = new ChromeDriver(ApplicationContext.CONTEXT.getChrome());
         //访问地址
         driver.get(url);
         //设置cookie
@@ -41,6 +39,7 @@ public class BrowserProxySessionBean implements BrowserProxySessionBeanRemote {
         for (Cookie loadedCookie : allCookies) {
             cookieMap.put(loadedCookie.getName(), loadedCookie.getValue());
         }
+        driver.close();
         return cookieMap;
     }
 }
