@@ -8,7 +8,7 @@ import javax.ejb.TransactionAttribute;
 import javax.ejb.TransactionAttributeType;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 /**
  *
@@ -21,7 +21,7 @@ public class BrowserProxySessionBean implements BrowserProxySessionBeanRemote {
 
     @Override
     public Map<String, String> getNewCookie(String url, Map<String, String> cookieMap) {
-        WebDriver driver = new InternetExplorerDriver();
+        WebDriver driver = new FirefoxDriver();
         //访问地址
         driver.get(url);
         //设置cookie
