@@ -1,16 +1,16 @@
-[0.000][INFO]:      ChromeDriver 26.0.1383.0 /home/aladdin/chromedriver
-[0.703][FINE]:      Initializing session with capabilities {
+[0.001][INFO]:      ChromeDriver 26.0.1383.0 /home/aladdin/chromedriver
+[0.749][FINE]:      Initializing session with capabilities {
    "browserName": "chrome",
    "chrome.binary": "/usr/bin/chromium-browser",
    "platform": "ANY",
    "version": ""
 }
 
-[0.703][INFO]:      Launching chrome: /usr/bin/chromium-browser --disable-hang-monitor --disable-prompt-on-repost --dom-automation --full-memory-crash-report --no-default-browser-check --no-first-run --disable-background-networking --disable-sync --disable-translate --disable-web-resources --safebrowsing-disable-auto-update --safebrowsing-disable-download-protection --disable-client-side-phishing-detection --disable-component-update --disable-default-apps --enable-logging --log-level=1 --password-store=basic --ignore-certificate-errors about:blank
-[1.428][INFO]:      Connected to Chrome successfully. Version: 18.0.1025.151
-[1.480][FINE]:      Command received (/session/f095c135c4c9581aed82b5d4d11d688a)
-[1.480][FINE]:      Command finished (/session/f095c135c4c9581aed82b5d4d11d688a) with response {
-   "sessionId": "f095c135c4c9581aed82b5d4d11d688a",
+[0.749][INFO]:      Launching chrome: /usr/bin/chromium-browser --disable-hang-monitor --disable-prompt-on-repost --dom-automation --full-memory-crash-report --no-default-browser-check --no-first-run --disable-background-networking --disable-sync --disable-translate --disable-web-resources --safebrowsing-disable-auto-update --safebrowsing-disable-download-protection --disable-client-side-phishing-detection --disable-component-update --disable-default-apps --enable-logging --log-level=1 --password-store=basic --ignore-certificate-errors about:blank
+[1.474][INFO]:      Connected to Chrome successfully. Version: 18.0.1025.151
+[1.522][FINE]:      Command received (/session/2e54fc66b98f49b7ce20381ec5c2a9cb)
+[1.522][FINE]:      Command finished (/session/2e54fc66b98f49b7ce20381ec5c2a9cb) with response {
+   "sessionId": "2e54fc66b98f49b7ce20381ec5c2a9cb",
    "status": 0,
    "value": {
       "acceptSslCerts": false,
@@ -32,114 +32,202 @@
    }
 }
 
-[1.511][FINE]:      Command received (/session/f095c135c4c9581aed82b5d4d11d688a/url) with params {
+[1.556][FINE]:      Command received (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/url) with params {
    "url": "http://weibo.com"
 }
 
-[1.511][FINER]:     Waiting for all views to stop loading...
-[1.511][FINER]:     Done waiting for all views to stop loading
-[6.058][FINER]:     Waiting for all views to stop loading...
-[6.068][FINER]:     Done waiting for all views to stop loading
-[6.068][FINE]:      Command finished (/session/f095c135c4c9581aed82b5d4d11d688a/url) with response {
-   "sessionId": "f095c135c4c9581aed82b5d4d11d688a",
+[1.556][FINER]:     Waiting for all views to stop loading...
+[1.558][FINER]:     Done waiting for all views to stop loading
+[6.454][FINER]:     Waiting for all views to stop loading...
+[6.470][FINER]:     Done waiting for all views to stop loading
+[6.470][FINE]:      Command finished (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/url) with response {
+   "sessionId": "2e54fc66b98f49b7ce20381ec5c2a9cb",
    "status": 0,
    "value": {
 
    }
 }
 
-[6.076][FINE]:      Command received (/session/f095c135c4c9581aed82b5d4d11d688a/cookie) with params {
-   "cookie": {
-      "class": "org.openqa.selenium.Cookie",
-      "hCode": 82467,
-      "name": "SUE",
-      "path": "/",
-      "secure": false,
-      "value": "es%3D5300d4dd331e9807fe1f81ee560d6b6d%26ev%3Dv1%26es2%3D1c763dda1652040d50640952f6928271%26rs0%3D..."
+[6.479][FINE]:      Command received (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/element) with params {
+   "using": "xpath",
+   "value": "/html/body/div/div[2]/div[2]/div[2]/div/div/div/input"
+}
+
+[6.480][FINER]:     Waiting for all views to stop loading...
+[6.481][FINER]:     Done waiting for all views to stop loading
+[6.560][FINER]:     Waiting for all views to stop loading...
+[6.560][FINER]:     Done waiting for all views to stop loading
+[6.560][FINE]:      Command finished (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/element) with response {
+   "sessionId": "2e54fc66b98f49b7ce20381ec5c2a9cb",
+   "status": 0,
+   "value": {
+      "ELEMENT": ":wdc:1365933346666"
    }
 }
 
-[6.076][FINER]:     Waiting for all views to stop loading...
-[6.081][FINER]:     Done waiting for all views to stop loading
-[6.100][FINER]:     Waiting for all views to stop loading...
-[6.101][FINER]:     Done waiting for all views to stop loading
-[6.101][FINE]:      Command finished (/session/f095c135c4c9581aed82b5d4d11d688a/cookie) with response {
-   "sessionId": "f095c135c4c9581aed82b5d4d11d688a",
+[6.591][FINE]:      Command received (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/element/:wdc:1365933346666/value) with params {
+   "id": ":wdc:1365933346666",
+   "value": [ "hr10240002@163.com" ]
+}
+
+[6.591][FINER]:     Waiting for all views to stop loading...
+[6.591][FINER]:     Done waiting for all views to stop loading
+[7.007][FINER]:     Waiting for all views to stop loading...
+[7.008][FINER]:     Done waiting for all views to stop loading
+[7.008][FINE]:      Command finished (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/element/:wdc:1365933346666/value) with response {
+   "sessionId": "2e54fc66b98f49b7ce20381ec5c2a9cb",
    "status": 0,
    "value": {
 
    }
 }
 
-[6.105][FINE]:      Command received (/session/f095c135c4c9581aed82b5d4d11d688a/cookie) with params {
-   "cookie": {
-      "class": "org.openqa.selenium.Cookie",
-      "hCode": 82481,
-      "name": "SUS",
-      "path": "/",
-      "secure": false,
-      "value": "SID-3316242410-1365927895-JA-uh54l-6654af482f64bfe7d9d0a0bd5e2e8cc3"
+[7.011][FINE]:      Command received (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/element) with params {
+   "using": "xpath",
+   "value": "/html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/input"
+}
+
+[7.011][FINER]:     Waiting for all views to stop loading...
+[7.011][FINER]:     Done waiting for all views to stop loading
+[7.064][FINER]:     Waiting for all views to stop loading...
+[7.066][FINER]:     Done waiting for all views to stop loading
+[7.066][FINE]:      Command finished (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/element) with response {
+   "sessionId": "2e54fc66b98f49b7ce20381ec5c2a9cb",
+   "status": 0,
+   "value": {
+      "ELEMENT": ":wdc:1365933346667"
    }
 }
 
-[6.105][FINER]:     Waiting for all views to stop loading...
-[6.106][FINER]:     Done waiting for all views to stop loading
-[6.108][FINER]:     Waiting for all views to stop loading...
-[6.109][FINER]:     Done waiting for all views to stop loading
-[6.109][FINE]:      Command finished (/session/f095c135c4c9581aed82b5d4d11d688a/cookie) with response {
-   "sessionId": "f095c135c4c9581aed82b5d4d11d688a",
+[7.071][FINE]:      Command received (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/element/:wdc:1365933346667/value) with params {
+   "id": ":wdc:1365933346667",
+   "value": [ "ljy1024" ]
+}
+
+[7.071][FINER]:     Waiting for all views to stop loading...
+[7.073][FINER]:     Done waiting for all views to stop loading
+[7.306][FINER]:     Waiting for all views to stop loading...
+[7.306][FINER]:     Done waiting for all views to stop loading
+[7.306][FINE]:      Command finished (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/element/:wdc:1365933346667/value) with response {
+   "sessionId": "2e54fc66b98f49b7ce20381ec5c2a9cb",
    "status": 0,
    "value": {
 
    }
 }
 
-[6.113][FINE]:      Command received (/session/f095c135c4c9581aed82b5d4d11d688a/cookie) with params {
-   "cookie": {
-      "class": "org.openqa.selenium.Cookie",
-      "hCode": 82478,
-      "name": "SUP",
-      "path": "/",
-      "secure": false,
-      "value": "cv%3D1%26bt%3D1365927895%26et%3D1366014295%26d%3Dc909%26i%3Db0c2%26us%3D1%26vf%3D0%26vt%3D0%26ac%..."
+[10.310][FINE]:     Command received (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/element) with params {
+   "using": "xpath",
+   "value": "/html/body/div/div[2]/div[2]/div[2]/div/div[3]/div/input"
+}
+
+[10.310][FINER]:    Waiting for all views to stop loading...
+[10.311][FINER]:    Done waiting for all views to stop loading
+[10.363][FINER]:    Waiting for all views to stop loading...
+[10.363][FINER]:    Done waiting for all views to stop loading
+[10.363][FINE]:     Command finished (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/element) with response {
+   "sessionId": "2e54fc66b98f49b7ce20381ec5c2a9cb",
+   "status": 0,
+   "value": {
+      "ELEMENT": ":wdc:1365933346668"
    }
 }
 
-[6.113][FINER]:     Waiting for all views to stop loading...
-[6.114][FINER]:     Done waiting for all views to stop loading
-[6.116][FINER]:     Waiting for all views to stop loading...
-[6.116][FINER]:     Done waiting for all views to stop loading
-[6.116][FINE]:      Command finished (/session/f095c135c4c9581aed82b5d4d11d688a/cookie) with response {
-   "sessionId": "f095c135c4c9581aed82b5d4d11d688a",
+[10.367][FINE]:     Command received (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/element/:wdc:1365933346668/displayed)
+[10.367][FINER]:    Waiting for all views to stop loading...
+[10.368][FINER]:    Done waiting for all views to stop loading
+[10.416][FINER]:    Waiting for all views to stop loading...
+[10.417][FINER]:    Done waiting for all views to stop loading
+[10.417][FINE]:     Command finished (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/element/:wdc:1365933346668/displayed) with response {
+   "sessionId": "2e54fc66b98f49b7ce20381ec5c2a9cb",
+   "status": 0,
+   "value": true
+}
+
+[10.420][FINE]:     Command received (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/element/:wdc:1365933346668/attribute/value)
+[10.420][FINER]:    Waiting for all views to stop loading...
+[10.421][FINER]:    Done waiting for all views to stop loading
+[10.458][FINER]:    Waiting for all views to stop loading...
+[10.458][FINER]:    Done waiting for all views to stop loading
+[10.458][FINE]:     Command finished (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/element/:wdc:1365933346668/attribute/value) with response {
+   "sessionId": "2e54fc66b98f49b7ce20381ec5c2a9cb",
+   "status": 0,
+   "value": ""
+}
+
+[12.462][FINE]:     Command received (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/element/:wdc:1365933346668/attribute/value)
+[12.462][FINER]:    Waiting for all views to stop loading...
+[12.463][FINER]:    Done waiting for all views to stop loading
+[12.471][FINER]:    Waiting for all views to stop loading...
+[12.472][FINER]:    Done waiting for all views to stop loading
+[12.472][FINE]:     Command finished (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/element/:wdc:1365933346668/attribute/value) with response {
+   "sessionId": "2e54fc66b98f49b7ce20381ec5c2a9cb",
+   "status": 0,
+   "value": "4"
+}
+
+[14.476][FINE]:     Command received (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/element/:wdc:1365933346668/attribute/value)
+[14.476][FINER]:    Waiting for all views to stop loading...
+[14.477][FINER]:    Done waiting for all views to stop loading
+[14.484][FINER]:    Waiting for all views to stop loading...
+[14.485][FINER]:    Done waiting for all views to stop loading
+[14.485][FINE]:     Command finished (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/element/:wdc:1365933346668/attribute/value) with response {
+   "sessionId": "2e54fc66b98f49b7ce20381ec5c2a9cb",
+   "status": 0,
+   "value": "4v"
+}
+
+[16.488][FINE]:     Command received (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/element/:wdc:1365933346668/attribute/value)
+[16.488][FINER]:    Waiting for all views to stop loading...
+[16.489][FINER]:    Done waiting for all views to stop loading
+[16.497][FINER]:    Waiting for all views to stop loading...
+[16.497][FINER]:    Done waiting for all views to stop loading
+[16.498][FINE]:     Command finished (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/element/:wdc:1365933346668/attribute/value) with response {
+   "sessionId": "2e54fc66b98f49b7ce20381ec5c2a9cb",
+   "status": 0,
+   "value": "4vpcz"
+}
+
+[18.501][FINE]:     Command received (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/element) with params {
+   "using": "xpath",
+   "value": "/html/body/div/div[2]/div[2]/div[2]/div/div[6]/a/span"
+}
+
+[18.501][FINER]:    Waiting for all views to stop loading...
+[18.502][FINER]:    Done waiting for all views to stop loading
+[18.556][FINER]:    Waiting for all views to stop loading...
+[18.557][FINER]:    Done waiting for all views to stop loading
+[18.557][FINE]:     Command finished (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/element) with response {
+   "sessionId": "2e54fc66b98f49b7ce20381ec5c2a9cb",
+   "status": 0,
+   "value": {
+      "ELEMENT": ":wdc:1365933346669"
+   }
+}
+
+[18.566][FINE]:     Command received (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/element/:wdc:1365933346669/click) with params {
+   "id": ":wdc:1365933346669"
+}
+
+[18.566][FINER]:    Waiting for all views to stop loading...
+[18.566][FINER]:    Done waiting for all views to stop loading
+[18.729][FINER]:    Waiting for all views to stop loading...
+[25.749][FINER]:    Done waiting for all views to stop loading
+[25.749][FINE]:     Command finished (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/element/:wdc:1365933346669/click) with response {
+   "sessionId": "2e54fc66b98f49b7ce20381ec5c2a9cb",
    "status": 0,
    "value": {
 
    }
 }
 
-[6.125][FINE]:      Command received (/session/f095c135c4c9581aed82b5d4d11d688a/url) with params {
-   "url": "http://weibo.com"
-}
-
-[6.125][FINER]:     Waiting for all views to stop loading...
-[6.126][FINER]:     Done waiting for all views to stop loading
-[22.166][FINER]:    Waiting for all views to stop loading...
-[22.171][FINER]:    Done waiting for all views to stop loading
-[22.171][FINE]:     Command finished (/session/f095c135c4c9581aed82b5d4d11d688a/url) with response {
-   "sessionId": "f095c135c4c9581aed82b5d4d11d688a",
-   "status": 0,
-   "value": {
-
-   }
-}
-
-[22.174][FINE]:     Command received (/session/f095c135c4c9581aed82b5d4d11d688a/cookie)
-[22.174][FINER]:    Waiting for all views to stop loading...
-[22.175][FINER]:    Done waiting for all views to stop loading
-[22.178][FINER]:    Waiting for all views to stop loading...
-[22.179][FINER]:    Done waiting for all views to stop loading
-[22.179][FINE]:     Command finished (/session/f095c135c4c9581aed82b5d4d11d688a/cookie) with response {
-   "sessionId": "f095c135c4c9581aed82b5d4d11d688a",
+[25.757][FINE]:     Command received (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/cookie)
+[25.757][FINER]:    Waiting for all views to stop loading...
+[25.758][FINER]:    Done waiting for all views to stop loading
+[25.801][FINER]:    Waiting for all views to stop loading...
+[25.801][FINER]:    Done waiting for all views to stop loading
+[25.802][FINE]:     Command finished (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/cookie) with response {
+   "sessionId": "2e54fc66b98f49b7ce20381ec5c2a9cb",
    "status": 0,
    "value": [ {
       "domain": "weibo.com",
@@ -147,7 +235,7 @@
       "name": "NSC_wjq_xfjcp.dpn_w3.6_w4",
       "path": "/",
       "secure": false,
-      "value": "ffffffff0941134545525d5f4f58455e445a4a423660"
+      "value": "ffffffff0941136945525d5f4f58455e445a4a423660"
    }, {
       "domain": ".weibo.com",
       "http_only": false,
@@ -161,67 +249,83 @@
       "name": "Apache",
       "path": "/",
       "secure": false,
-      "value": "9829487879760.562.1365929237902"
+      "value": "6913413074798.882.1365933342878"
    }, {
       "domain": ".weibo.com",
-      "expiry": 1681289237.0,
+      "expiry": 1681293342.0,
       "http_only": false,
       "name": "SINAGLOBAL",
       "path": "/",
       "secure": false,
-      "value": "9829487879760.562.1365929237902"
+      "value": "6913413074798.882.1365933342878"
    }, {
       "domain": ".weibo.com",
-      "expiry": 1397033237.0,
+      "expiry": 1397037342.0,
       "http_only": false,
       "name": "ULV",
       "path": "/",
       "secure": false,
-      "value": "1365929237915:1:1:1:9829487879760.562.1365929237902:"
-   }, {
-      "domain": "weibo.com",
-      "http_only": false,
-      "name": "SUE",
-      "path": "/",
-      "secure": false,
-      "value": "es%3D5300d4dd331e9807fe1f81ee560d6b6d%26ev%3Dv1%26es2%3D1c763dda1652040d50640952f6928271%26rs0%3D..."
-   }, {
-      "domain": "weibo.com",
-      "http_only": false,
-      "name": "SUS",
-      "path": "/",
-      "secure": false,
-      "value": "SID-3316242410-1365927895-JA-uh54l-6654af482f64bfe7d9d0a0bd5e2e8cc3"
-   }, {
-      "domain": "weibo.com",
-      "http_only": false,
-      "name": "SUP",
-      "path": "/",
-      "secure": false,
-      "value": "cv%3D1%26bt%3D1365927895%26et%3D1366014295%26d%3Dc909%26i%3Db0c2%26us%3D1%26vf%3D0%26vt%3D0%26ac%..."
+      "value": "1365933342901:1:1:1:6913413074798.882.1365933342878:"
    }, {
       "domain": "weibo.com",
       "http_only": true,
       "name": "NSC_JO5ux3qsdo02pureo32zvveomvcu4bn",
       "path": "/",
       "secure": false,
-      "value": "ffffffff0941134045525d5f4f58455e445a4a423660"
+      "value": "ffffffff0941137445525d5f4f58455e445a4a423660"
    }, {
       "domain": ".weibo.com",
-      "expiry": 1366534042.0,
-      "http_only": false,
-      "name": "wvr",
+      "http_only": true,
+      "name": "SUE",
       "path": "/",
       "secure": false,
-      "value": "5"
+      "value": "es%3Dd2809616e71bca19a112b856f4692ee2%26ev%3Dv1%26es2%3D5a79a6838c2e3fc21474fc61f12fcafa%26rs0%3D..."
    }, {
-      "domain": "weibo.com",
-      "expiry": 1366015648.0,
+      "domain": ".weibo.com",
       "http_only": false,
-      "name": "SinaRot/u/3316242410%3Fwvr%3D5%26",
+      "name": "SUP",
       "path": "/",
       "secure": false,
-      "value": "34"
+      "value": "cv%3D1%26bt%3D1365933360%26et%3D1366019760%26d%3Dc909%26i%3D7b71%26us%3D1%26vf%3D0%26vt%3D0%26ac%..."
+   }, {
+      "domain": ".weibo.com",
+      "http_only": true,
+      "name": "SUS",
+      "path": "/",
+      "secure": false,
+      "value": "SID-3316904654-1365933360-JA-ezwq2-09c86186644e61f884ca3fbe96788cc3"
+   }, {
+      "domain": ".weibo.com",
+      "expiry": 1366538159.0,
+      "http_only": false,
+      "name": "ALF",
+      "path": "/",
+      "secure": false,
+      "value": "1366538159"
+   }, {
+      "domain": ".weibo.com",
+      "http_only": false,
+      "name": "SSOLoginState",
+      "path": "/",
+      "secure": false,
+      "value": "1365933360"
+   }, {
+      "domain": ".weibo.com",
+      "expiry": 1366797359.0,
+      "http_only": false,
+      "name": "un",
+      "path": "/",
+      "secure": false,
+      "value": "hr10240002@163.com"
    } ]
+}
+
+[25.818][FINE]:     Command received (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/window)
+[25.822][FINE]:     Command finished (/session/2e54fc66b98f49b7ce20381ec5c2a9cb/window) with response {
+   "sessionId": "2e54fc66b98f49b7ce20381ec5c2a9cb",
+   "status": 0,
+   "value": {
+
+   }
 }
 
