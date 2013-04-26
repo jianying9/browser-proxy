@@ -48,7 +48,7 @@ public class BrowserProxySessionBeanTest {
         oldCookieMap.put("SUS", "SID-3316242410-1365927895-JA-uh54l-6654af482f64bfe7d9d0a0bd5e2e8cc3");
         oldCookieMap.put("ALF", "1366532695");
         oldCookieMap.put("SSOLoginState", "1365927895");
-        Map<String, String> newCookieMap = remote.getNewCookie("http://weibo.com", oldCookieMap);
+        Map<String, String> newCookieMap = remote.getNewCookie("http://weibo.com/", oldCookieMap);
         System.out.println(newCookieMap);
     }
     
@@ -56,14 +56,15 @@ public class BrowserProxySessionBeanTest {
     public void testGetLoginCookie() throws Exception {
         BrowserProxySessionBean remote = new BrowserProxySessionBean();
         Map<String, String> newCookieMap = remote.getLoginCookie(
-                "http://weibo.com",
+                "http://weibo.com/",
                 "hr10240002@163.com",
                 "/html/body/div/div[2]/div[2]/div[2]/div/div/div/input",
                 "ljy1024",
                 "/html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/input",
                 "/html/body/div/div[2]/div[2]/div[2]/div/div[3]/div/input",
                 5,
-                "/html/body/div/div[2]/div[2]/div[2]/div/div[6]/a/span");
+                "/html/body/div/div[2]/div[2]/div[2]/div/div[6]/a/span",
+                "/html/body/div/div/div/div/div/div/div[4]/div/a");
         System.out.println(newCookieMap);
     }
 }

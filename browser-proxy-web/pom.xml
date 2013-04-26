@@ -32,6 +32,70 @@
                     <artifactId>javax.persistence</artifactId>
                     <groupId>org.eclipse.persistence</groupId>
                 </exclusion>
+                <exclusion>
+                    <artifactId>jpa-connector</artifactId>
+                    <groupId>org.glassfish.main.persistence</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>connectors-inbound-runtime</artifactId>
+                    <groupId>org.glassfish.main.connectors</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>jms-core</artifactId>
+                    <groupId>org.glassfish.main.jms</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>ejb-container</artifactId>
+                    <groupId>org.glassfish.main.ejb</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>jts</artifactId>
+                    <groupId>org.glassfish.main.transaction</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>acc-config</artifactId>
+                    <groupId>org.glassfish.main.appclient.client</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>webservices-connector</artifactId>
+                    <groupId>org.glassfish.main.webservices</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>webservices.security</artifactId>
+                    <groupId>org.glassfish.main.security</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>appclient.security</artifactId>
+                    <groupId>org.glassfish.main.security</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>work-management</artifactId>
+                    <groupId>org.glassfish.main.connectors</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>cmp-internal-api</artifactId>
+                    <groupId>org.glassfish.main.persistence.cmp</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>webservices-api-osgi</artifactId>
+                    <groupId>org.glassfish.metro</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>javax.jms</artifactId>
+                    <groupId>org.glassfish.main.javaee-api</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>jaxb-osgi</artifactId>
+                    <groupId>com.sun.xml.bind</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>jaxb-api-osgi</artifactId>
+                    <groupId>javax.xml.bind</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>javax.annotation</artifactId>
+                    <groupId>org.glassfish.main.javaee-api</groupId>
+                </exclusion>
             </exclusions>
         </dependency>
         <dependency>

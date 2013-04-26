@@ -15,7 +15,7 @@ public class BrowserProxySessionBeanRemoteFactory {
         props.setProperty("java.naming.factory.initial", "com.sun.enterprise.naming.SerialInitContextFactory");
         props.setProperty("java.naming.factory.url.pkgs", "com.sun.enterprise.naming");
         props.setProperty("java.naming.factory.state", "com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl");
-        props.setProperty("org.omg.CORBA.ORBInitialHost", "192.168.64.50");
+        props.setProperty("org.omg.CORBA.ORBInitialHost", "data.91yong.com");
         props.setProperty("org.omg.CORBA.ORBInitialPort", "3700");
         BrowserProxySessionBeanRemote remote;
         try {
@@ -23,7 +23,7 @@ public class BrowserProxySessionBeanRemoteFactory {
             remote = (BrowserProxySessionBeanRemote) ic.lookup("com.wolf.browser.BrowserProxySessionBeanRemote");
         } catch (NamingException e) {
             System.err.println(e);
-            throw new RuntimeException("init BrowserProxySessionBeanRemote failure.");
+            throw new RuntimeException(e);
         }
         return remote;
     }

@@ -1,10 +1,8 @@
 
 import com.wolf.browser.BrowserProxySessionBeanRemote;
+import com.wolf.browser.BrowserProxySessionBeanRemoteFactory;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Properties;
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -39,20 +37,7 @@ public class BroswerProxyRemoteUnitTest {
 
     @Test
     public void browserProxyRemoteTest() {
-        Properties props = new Properties();
-        props.setProperty("java.naming.factory.initial", "com.sun.enterprise.naming.SerialInitContextFactory");
-        props.setProperty("java.naming.factory.url.pkgs", "com.sun.enterprise.naming");
-        props.setProperty("java.naming.factory.state", "com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl");
-        props.setProperty("org.omg.CORBA.ORBInitialHost", "192.168.64.50");
-        props.setProperty("org.omg.CORBA.ORBInitialPort", "3700");
-        BrowserProxySessionBeanRemote remote;
-        try {
-            InitialContext ic = new InitialContext(props);
-            remote = (BrowserProxySessionBeanRemote) ic.lookup("com.wolf.browser.BrowserProxySessionBeanRemote");
-        } catch (NamingException e) {
-            e.printStackTrace();
-            throw new RuntimeException("init BrowserProxySessionBeanRemote failure.");
-        }
+        BrowserProxySessionBeanRemote remote = BrowserProxySessionBeanRemoteFactory.getBrowserProxySessionBeanRemote();
         //
         Map<String, String> oldCookieMap = new HashMap<String, String>();
         oldCookieMap.put("SUE", "es%3D5300d4dd331e9807fe1f81ee560d6b6d%26ev%3Dv1%26es2%3D1c763dda1652040d50640952f6928271%26rs0%3DbBcbKji%252FqouPgr6%252F62v9IgBo%252B8ZNHHWzFHZCtY%252BG4Mm38%252FumggfzTHXIKe%252BR5QYF4yti9uV1t8xdpboXe20sVp%252FzQ0sQgaz5wGJ3MUjDQQ8qB269uxuAfpl2Xqa%252FDwlMtH0SQwXWz8cisAwzuqqcDVxgXVwqFqSFO4MZHsCL0x0%253D%26rv%3D0");
