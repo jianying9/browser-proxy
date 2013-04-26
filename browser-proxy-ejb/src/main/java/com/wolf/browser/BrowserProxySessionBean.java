@@ -58,8 +58,7 @@ public class BrowserProxySessionBean implements BrowserProxySessionBeanRemote {
     }
 
     @Override
-    public Map<String, String> getLoginCookie(String url, String userName, String userNameXPath, String password, String passwordXPath, String checkCodeXPath, int checkCodeLength, String loginBtnXPath, String finishWaitXPath) {
-
+    public Map<String, String> getLoginCookie(String url, String userName, String userNameXPath, String password, String passwordXPath, String checkCodeXPath, int checkCodeLength, String loginBtnXPath) {
         if (this.driver == null) {
             driver = new ChromeDriver(ApplicationContext.CONTEXT.getChrome());
         }

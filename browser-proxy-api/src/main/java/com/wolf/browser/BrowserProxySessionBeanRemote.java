@@ -24,5 +24,5 @@ public interface BrowserProxySessionBeanRemote {
      * @param password
      * @return 
      */
-    public Map<String, String> getLoginCookie(String url, String userName, String userNameXPath, String password, String passwordXPath, String checkCodeXPath, int checkCodeLength, String loginBtnXPath, String finishWaitXPath);
+    public Map<String, String> getLoginCookie(String url, String userName, String userNameXPath, String password, String passwordXPath, String checkCodeXPath, int checkCodeLength, String loginBtnXPath);
 }

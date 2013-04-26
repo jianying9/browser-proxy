@@ -63,8 +63,7 @@ public class BrowserProxySessionBeanTest {
                 "/html/body/div/div[2]/div[2]/div[2]/div/div[2]/div/input",
                 "/html/body/div/div[2]/div[2]/div[2]/div/div[3]/div/input",
                 5,
-                "/html/body/div/div[2]/div[2]/div[2]/div/div[6]/a/span",
-                "/html/body/div/div/div/div/div/div/div[4]/div/a");
+                "/html/body/div/div[2]/div[2]/div[2]/div/div[6]/a/span");
         System.out.println(newCookieMap);
     }
 }
