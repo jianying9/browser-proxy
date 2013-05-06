@@ -30,6 +30,12 @@ public class BrowserProxySessionBean implements BrowserProxySessionBeanRemote {
     public Map<String, String> getNewCookie(String url, Map<String, String> cookieMap) {
         if (this.driver == null) {
             driver = new ChromeDriver(ApplicationContext.CONTEXT.getChrome());
+        } else {
+            try {
+                driver.getCurrentUrl();
+            } catch (RuntimeException e) {
+                driver = new ChromeDriver(ApplicationContext.CONTEXT.getChrome());
+            }
         }
         //访问地址
         driver.get(url);
@@ -61,6 +67,12 @@ public class BrowserProxySessionBean implements BrowserProxySessionBeanRemote {
     public Map<String, String> getLoginCookie(String url, String userName, String userNameXPath, String password, String passwordXPath, String checkCodeXPath, int checkCodeLength, String loginBtnXPath) {
         if (this.driver == null) {
             driver = new ChromeDriver(ApplicationContext.CONTEXT.getChrome());
+        } else {
+            try {
+                driver.getCurrentUrl();
+            } catch (RuntimeException e) {
+                driver = new ChromeDriver(ApplicationContext.CONTEXT.getChrome());
+            }
         }
         //访问地址
         System.out.println("first get:" + url);
@@ -75,9 +87,13 @@ public class BrowserProxySessionBean implements BrowserProxySessionBeanRemote {
         passwordElement.sendKeys(password);
         //
         WebElement loginBtnElement = driver.findElement(By.xpath(loginBtnXPath));
-        loginBtnElement.click();
         WebElement checkCodeElement = driver.findElement(By.xpath(checkCodeXPath));
-        String newUrl = url;
+        loginBtnElement.click();
+        try {
+            Thread.currentThread().sleep(2000);
+        } catch (InterruptedException ex) {
+        }
+        String newUrl = driver.getCurrentUrl();
         boolean waitCode;
         String codeValue;
         while (newUrl.endsWith(url)) {
