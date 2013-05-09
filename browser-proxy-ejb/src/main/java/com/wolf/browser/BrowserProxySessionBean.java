@@ -37,6 +37,8 @@ public class BrowserProxySessionBean implements BrowserProxySessionBeanRemote {
                 driver = new ChromeDriver(ApplicationContext.CONTEXT.getChrome());
             }
         }
+        //清除cookie
+        driver.manage().deleteAllCookies();
         //访问地址
         driver.get(url);
         //设置cookie
@@ -57,8 +59,6 @@ public class BrowserProxySessionBean implements BrowserProxySessionBeanRemote {
         for (Cookie loadedCookie : allCookies) {
             cookieMap.put(loadedCookie.getName(), loadedCookie.getValue());
         }
-        //清除cookie
-        driver.manage().deleteAllCookies();
         //
         return cookieMap;
     }
@@ -74,6 +74,8 @@ public class BrowserProxySessionBean implements BrowserProxySessionBeanRemote {
                 driver = new ChromeDriver(ApplicationContext.CONTEXT.getChrome());
             }
         }
+        //清除cookie
+        driver.manage().deleteAllCookies();
         //访问地址
         System.out.println("first get:" + url);
         driver.get(url);
@@ -129,9 +131,6 @@ public class BrowserProxySessionBean implements BrowserProxySessionBeanRemote {
         for (Cookie loadedCookie : allCookies) {
             newCookieMap.put(loadedCookie.getName(), loadedCookie.getValue());
         }
-        //删除cookie
-        System.out.println("清除cookie");
-        driver.manage().deleteAllCookies();
         return newCookieMap;
     }
 }
