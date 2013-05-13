@@ -41,6 +41,7 @@ public class BrowserProxySessionBean implements BrowserProxySessionBeanRemote {
         driver.manage().deleteAllCookies();
         //访问地址
         driver.get(url);
+        driver.manage().deleteAllCookies();
         //设置cookie
         Cookie cookie;
         Set<Map.Entry<String, String>> entrySet = cookieMap.entrySet();
