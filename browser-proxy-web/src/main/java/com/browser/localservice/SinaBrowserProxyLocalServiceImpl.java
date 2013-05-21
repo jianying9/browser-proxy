@@ -29,9 +29,7 @@ public class SinaBrowserProxyLocalServiceImpl implements SinaBrowserProxyLocalSe
     private String userNameXpath = "/html/body/div/div[2]/div[2]/div/form/div/ul/li/input";
     private String passwordXpath = "/html/body/div/div[2]/div[2]/div/form/div/ul/li[2]/input";
     private String loginBtnXpath = "/html/body/div/div[2]/div[2]/div/form/div/ul/li[7]/a/input";
-    private String loginWaitXpath = "/html/body/div[2]";
-    private String weiboLoginWaitXpath = "/html/body/div/div[2]/div[2]/div[2]/div/div/div/input";
-    private String weiboWaitXpath = "/html/body/div/div/div[3]";
+    private String waitXpath = "/html/body";
     private String chromeDriver = null;
     private String chromeBinary = null;
     private WebDriver webDriver = null;
@@ -62,11 +60,14 @@ public class SinaBrowserProxyLocalServiceImpl implements SinaBrowserProxyLocalSe
             this.webDriver = new ChromeDriver(capabilities);
         }
         if(cleanCookie) {
+            WebDriverWait webDriverWait = new WebDriverWait(webDriver, 60);
             System.out.println("clean cookie...");
             this.webDriver.get(this.loginUrl);
+            webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(this.waitXpath)));
             this.webDriver.manage().deleteAllCookies();
             System.out.println("clean cookie long.sina.com.cn...");
             this.webDriver.get(this.weiboUrl);
+            webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(this.waitXpath)));
             this.webDriver.manage().deleteAllCookies();
             System.out.println("clean cookie weibo.com...");
         }
@@ -79,7 +80,7 @@ public class SinaBrowserProxyLocalServiceImpl implements SinaBrowserProxyLocalSe
         System.out.println("login.......");
         webDriver.get(this.loginUrl);
         WebDriverWait webDriverWait = new WebDriverWait(webDriver, 60);
-        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(this.userNameXpath)));
+        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(this.waitXpath)));
         WebElement userNameElement = webDriver.findElement(By.xpath(this.userNameXpath));
         userNameElement.sendKeys(userName);
         WebElement passwordElement = webDriver.findElement(By.xpath(this.passwordXpath));
@@ -94,7 +95,7 @@ public class SinaBrowserProxyLocalServiceImpl implements SinaBrowserProxyLocalSe
             }
             newUrl = webDriver.getCurrentUrl();
         }
-        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(this.loginWaitXpath)));
+        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(this.waitXpath)));
         Set<Cookie> allCookies = webDriver.manage().getCookies();
         Map<String, String> loginCookieMap = new HashMap<String, String>(16, 1);
         for (Cookie cookie : allCookies) {
@@ -111,7 +112,7 @@ public class SinaBrowserProxyLocalServiceImpl implements SinaBrowserProxyLocalSe
             }
             newUrl = webDriver.getCurrentUrl();
         }
-        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(this.weiboWaitXpath)));
+        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(this.waitXpath)));
         allCookies = webDriver.manage().getCookies();
         Map<String, String> weiboCookieMap = new HashMap<String, String>(16, 1);
         for (Cookie cookie : allCookies) {
@@ -128,7 +129,7 @@ public class SinaBrowserProxyLocalServiceImpl implements SinaBrowserProxyLocalSe
         System.out.println("wirte sina login cookie.....");
         webDriver.get(this.loginUrl);
         WebDriverWait webDriverWait = new WebDriverWait(webDriver, 60);
-        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(this.userNameXpath)));
+        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(this.waitXpath)));
         Map<String, String> loginCookieMap = CookieUtils.parseCookie(sinaCookie.getLongCookie());
         Cookie cookie;
         Set<Map.Entry<String, String>> entrySet = loginCookieMap.entrySet();
@@ -146,7 +147,7 @@ public class SinaBrowserProxyLocalServiceImpl implements SinaBrowserProxyLocalSe
             }
             newUrl = webDriver.getCurrentUrl();
         }
-        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(this.loginWaitXpath)));
+        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(this.waitXpath)));
         Set<Cookie> allCookies = webDriver.manage().getCookies();
         loginCookieMap.clear();
         for (Cookie newCookie : allCookies) {
@@ -156,7 +157,7 @@ public class SinaBrowserProxyLocalServiceImpl implements SinaBrowserProxyLocalSe
         //
         System.out.println("wirte weibo cookie.....");
         webDriver.get(this.weiboUrl);
-        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(this.weiboLoginWaitXpath)));
+        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(this.waitXpath)));
         Map<String, String> weiboCookieMap = CookieUtils.parseCookie(sinaCookie.getWeiboCookie());
         entrySet = weiboCookieMap.entrySet();
         for (Map.Entry<String, String> entry : entrySet) {
@@ -174,7 +175,7 @@ public class SinaBrowserProxyLocalServiceImpl implements SinaBrowserProxyLocalSe
             }
             newUrl = webDriver.getCurrentUrl();
         }
-        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(this.weiboWaitXpath)));
+        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(this.waitXpath)));
         allCookies = webDriver.manage().getCookies();
         weiboCookieMap.clear();
         for (Cookie newCookie : allCookies) {
